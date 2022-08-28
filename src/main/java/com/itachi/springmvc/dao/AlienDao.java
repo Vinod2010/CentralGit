@@ -19,6 +19,7 @@ public class AlienDao
 	{
 		Session session = sessionFactory.getCurrentSession();
 		List<Alien> aliens = session.createQuery("from Alien", Alien.class).list();
+		System.out.println("asai");
 		return aliens;
 	}
 
